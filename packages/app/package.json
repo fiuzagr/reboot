@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Main package",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "boot serve web/debug",
+    "serve:release": "boot serve web/release",
+    "build:debug": "boot build:webpack web/debug",
+    "build:release": "boot build:webpack web/release",
+    "build": "npm run build:debug && npm run build:release"
+  },
+  "dependencies": {
+    "@fiuzagr/boot": "^1.0.0-beta.4"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "reboot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "React + Boot",
+  "author": "fiuzagr",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "pretty-quick --staged"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.10.0",
+    "husky": "^0.14.3",
+    "lerna": "^2.11.0",
+    "prettier": "^1.13.7",
+    "pretty-quick": "^1.6.0"
+  }
+}

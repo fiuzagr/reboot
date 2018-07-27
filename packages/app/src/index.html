@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--!
+<%= htmlWebpackPlugin.options.metadata.banner %>
+
+  Version: <%= htmlWebpackPlugin.options.metadata.version %>
+  Date: <%= htmlWebpackPlugin.options.metadata.buildDate %>
+  Author: <%= htmlWebpackPlugin.options.metadata.author %>
+-->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Reboot</title>
+
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#000000">
+
+  <base href="<%= htmlWebpackPlugin.options.metadata.publicPath %>">
+  <link rel="manifest" href="/web-app-manifest.json">
+</head>
+<body>
+  <noscript>
+    To use this application you need to enable javascript for your browser.
+  </noscript>
+  <div id="root"></div>
+  <%=htmlWebpackPlugin.files.webpackManifest%>
+</body>
+</html>

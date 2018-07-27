@@ -1,0 +1,28 @@
+{
+  "short_name": "Reboot",
+  "name": "Reboot",
+  "description": "Reboot",
+  "lang": "en",
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/images/icons/icon_48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/images/icons/icon_96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/images/icons/icon_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}

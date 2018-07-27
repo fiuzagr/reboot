@@ -1,0 +1,12 @@
+*
+.*
+
+!.babelrc.js
+!.gitignore
+!package-lock.json
+!package.json
+!README.md
+
+!src/
+!src/**/*
+!src/**/.*
