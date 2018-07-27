@@ -5,13 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "boot serve web/debug",
-    "serve:release": "boot serve web/release",
-    "build:debug": "boot build:webpack web/debug",
-    "build:release": "boot build:webpack web/release",
+    "serve": "env BOOT_DEBUG=1 boot serve:webpack web",
+    "serve:release": "env BOOT_DEBUG= boot serve:webpack web",
+    "build:debug": "env BOOT_DEBUG=1 boot build:webpack web",
+    "build:release": "env BOOT_DEBUG= boot build:webpack web",
     "build": "npm run build:debug && npm run build:release"
-  },
-  "dependencies": {
-    "@fiuzagr/boot": "^1.0.0-beta.4"
   }
 }

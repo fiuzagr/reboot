@@ -10,6 +10,7 @@
     "precommit": "pretty-quick --staged"
   },
   "devDependencies": {
+    "@fiuzagr/boot": "^1.0.0-beta.7",
     "babel-eslint": "^8.2.6",
     "eslint": "^5.2.0",
     "eslint-config-prettier": "^2.9.0",
@@ -21,6 +22,8 @@
     "husky": "^0.14.3",
     "lerna": "^2.11.0",
     "prettier": "^1.13.7",
-    "pretty-quick": "^1.6.0"
+    "pretty-quick": "^1.6.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
   }
 }

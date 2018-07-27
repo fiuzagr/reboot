@@ -1,4 +1,7 @@
 //
+// Include general styles
+// This styles will be extracted by "Extract Text Plugin"
+import 'styles/index.styl';
 // Web App Manifest (Progressive Apps)
 import './web-app.manifest';
 // --------- Keep on top

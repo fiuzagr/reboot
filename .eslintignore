@@ -8,3 +8,6 @@ dist/
 # Inverse ignore
 !.eslintrc.js
 !.prettierrc.js
+!.stylelintrc.js
+!postcss.config.js
+!.boot/
