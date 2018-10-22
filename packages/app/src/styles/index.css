@@ -1,11 +1,67 @@
+/* Sanitation */
+hr {
+  border-top: 1px solid;
+  margin: -1px auto;
+}
+
+li > ol,
+li > ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+b,
+strong,
+em,
+small,
+code {
+  line-height: 1;
+}
+
+sup,
+sub {
+  position: relative;
+  top: -.4em;
+  vertical-align: baseline;
+}
+
+sub {
+  top: .4em;
+}
+
+q {
+  quotes: "\201c" "\201d";
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
+/* base styles */
+html {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
+  margin: 0 auto;
   overflow: hidden;
+  width: 100vw;
 }
 
 body {
-  overflow: auto;
+  overflow-y: scroll;
+}
+
+body,
+body *,
+body *:before,
+body *:after {
+  box-sizing: inherit;
 }

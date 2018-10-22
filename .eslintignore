@@ -6,6 +6,7 @@ coverage/
 dist/
 
 # Inverse ignore
+!.babelrc.js
 !.eslintrc.js
 !.prettierrc.js
 !.stylelintrc.js

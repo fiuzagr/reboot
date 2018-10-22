@@ -5,10 +5,15 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "env BOOT_DEBUG=1 boot serve:webpack web",
-    "serve:release": "env BOOT_DEBUG= boot serve:webpack web",
-    "build:debug": "env BOOT_DEBUG=1 boot build:webpack web",
-    "build:release": "env BOOT_DEBUG= boot build:webpack web",
+    "start": "npm run serve",
+    "serve": "env BOOT_LERNA=1 BOOT_DEBUG=1 boot serve:webpack web",
+    "serve:release": "env BOOT_LERNA=1 BOOT_DEBUG= boot serve:webpack web",
+    "build:debug": "env BBOOT_LERNA=1 OOT_DEBUG=1 boot build:webpack web",
+    "build:release": "env BBOOT_LERNA=1 OOT_DEBUG= boot build:webpack web",
     "build": "npm run build:debug && npm run build:release"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   }
 }

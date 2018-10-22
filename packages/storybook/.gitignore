@@ -2,6 +2,7 @@
 .*
 
 !.babelrc.js
+!.env.example
 !.gitignore
 !package-lock.json
 !package.json

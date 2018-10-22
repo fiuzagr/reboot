@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "boot build.webpack umd"
+    "start": "npm run build -- -w",
+    "build": "env BOOT_LERNA=1 boot build:webpack umd"
+  },
+  "devDependencies": {
+    "@fiuzagr/boot": "^1.0.0-beta.14"
   }
 }

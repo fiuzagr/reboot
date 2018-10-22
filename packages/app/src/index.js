@@ -1,21 +1,23 @@
 //
-// Include general styles
-// This styles will be extracted by "Extract Text Plugin"
-import 'styles/index.styl';
+// Base styles
+import './styles/index.css';
 // Web App Manifest (Progressive Apps)
-import './web-app.manifest';
+import './manifest.json';
 // --------- Keep on top
 
-import * as OfflinePlugin from '@offline-plugin/runtime';
-OfflinePlugin.install();
+import React from 'react';
+import { render } from 'react-dom';
+
+// install offline-plugin
+require('offline-plugin/runtime').install();
 
 // fake render
-const render = (html, elem) => {
-  elem.innerHTML = html;
-};
+// const render = (html, elem) => {
+// elem.innerHTML = html;
+// };
 
 const bootstrap = () => {
-  render('<h1>Reboot Ok!</h1>', document.getElementById('root'));
+  render(<h1>Reboot Ok!</h1>, document.getElementById('root'));
 };
 
 window.addEventListener('DOMContentLoaded', bootstrap, false);
