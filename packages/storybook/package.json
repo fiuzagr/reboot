@@ -1,12 +1,16 @@
 {
-  "name": "storybook",
-  "version": "1.0.0",
+  "name": "@reboot/storybook",
+  "version": "0.0.0",
   "description": "Storybook package",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "@fiuzagr/boot": "^1.0.0-beta.14"
+  "dependencies": {
+    "@reboot/app": "file:../app",
+    "@reboot/core": "file:../core",
+    "@reboot/env": "file:../env",
+    "@reboot/modules": "file:../modules",
+    "@reboot/ui": "file:../ui"
   }
 }

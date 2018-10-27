@@ -21,21 +21,23 @@ code {
 sup,
 sub {
   position: relative;
-  top: -.4em;
+  top: -0.4em;
   vertical-align: baseline;
 }
 
 sub {
-  top: .4em;
+  top: 0.4em;
 }
 
 q {
   quotes: "\201c" "\201d";
 }
-q:before {
+
+q::before {
   content: open-quote;
 }
-q:after {
+
+q::after {
   content: close-quote;
 }
 
@@ -43,12 +45,13 @@ q:after {
 html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  color: #333333;
+  color: #333;
   font-size: 16px;
   line-height: 1.5;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
@@ -61,7 +64,7 @@ body {
 
 body,
 body *,
-body *:before,
-body *:after {
+body *::before,
+body *::after {
   box-sizing: inherit;
 }

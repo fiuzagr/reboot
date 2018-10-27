@@ -8,6 +8,8 @@ import './manifest.json';
 import React from 'react';
 import { render } from 'react-dom';
 
+import { Button } from '@reboot/ui';
+
 // install offline-plugin
 require('offline-plugin/runtime').install();
 
@@ -17,7 +19,12 @@ require('offline-plugin/runtime').install();
 // };
 
 const bootstrap = () => {
-  render(<h1>Reboot Ok!</h1>, document.getElementById('root'));
+  render(
+    <h1>
+      <Button>Reboot Ok!</Button>
+    </h1>,
+    document.getElementById('root')
+  );
 };
 
 window.addEventListener('DOMContentLoaded', bootstrap, false);

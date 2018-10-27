@@ -1,6 +1,6 @@
 {
-  "name": "core",
-  "version": "1.0.0",
+  "name": "@reboot/core",
+  "version": "0.0.0",
   "description": "Core package",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "npm run build -- -w",
     "build": "env BOOT_LERNA=1 boot build:webpack umd"
   },
-  "devDependencies": {
-    "@fiuzagr/boot": "^1.0.0-beta.14"
+  "peerDependencies": {
+    "@reboot/env": "file:../env"
   }
 }

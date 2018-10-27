@@ -1,7 +1,7 @@
 {
-  "name": "reboot",
+  "name": "@reboot/reboot",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "React + Boot",
   "author": "fiuzagr",
   "license": "UNLICENSED",
@@ -10,15 +10,21 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lerna run build --stream",
+    "start": "lerna run start --scope @reboot/app --stream",
+    "watch": "lerna run start --ignore @reboot/app --stream",
     "precommit": "pretty-quick --staged"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
     "@fiuzagr/boot": "^1.0.0-beta.16",
     "eslint-plugin-react": "^7.11.1",
-    "lerna": "^3.4.3",
+    "lerna": "^2.11.0",
     "prettier": "^1.14.3",
     "pretty-quick": "^1.8.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "reakit": "^0.15.10",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0"
   }
